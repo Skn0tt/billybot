@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BillyBot Scratch Environment</title>
+
+  <link rel="stylesheet" href="./scratch.css">
+</head>
+<body>
+  <div id="blocklyArea"></div>
+
+  <div id="blocklyDiv" style="position: absolute"></div>
+
+  <button id="runBttn"/>
+
+  <script src="./google-blockly/blockly_compressed.js"></script>
+  <script src="./google-blockly/javascript_compressed.js"></script>
+  <script src="./google-blockly/blocks_compressed.js"></script>
+  <script src="./google-blockly/msg/js/en.js"></script>
+
+  <xml id="toolbox" style="display: none">
+    <category name="Fish" colour="230">
+      <block type="open_mouth"></block>
+      <block type="close_mouth"></block>
+      <block type="lift_chest"></block>
+      <block type="lower_chest"></block>
+      <block type="lift_fin"></block>
+      <block type="lower_fin"></block>
+      <block type="flap_fin"></block>
+      <block type="snap_mouth"></block>
+    </category>
+    <category name="Control" colour="100">
+      <block type="sleep"></block>
+      <block type="controls_if"></block>
+      <block type="controls_ifelse"></block>
+      <block type="controls_repeat"></block>
+      <block type="controls_whileUntil"></block>
+      <block type="controls_for"></block>
+      <block type="controls_repeat_ext"></block>
+      <block type="controls_flow_statements"></block>
+    </category>
+    <category name="Math" colour="80">
+      <block type="math_number"></block>
+      <block type="math_arithmetic"></block>
+    </category>
+    <category name="Logic" colour="150">
+      <block type="logic_boolean"></block>
+      <block type="logic_negate"></block>
+      <block type="logic_compare"></block>
+      <block type="logic_operation"></block>
+    </category>
+    <category name="Variables" colour="330" custom="VARIABLE"></category>
+    <category name="Functions" colour="290" custom="PROCEDURE"></category>
+  </xml>
+
+  <script src="./fish_api.js"></script>
+  <script src="./custom_blocks.js"></script>
+  <script src="./scratch.js"></script>
+
+</body>
+</html>

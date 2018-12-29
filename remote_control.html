@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Billy Bot Remote Control</title>
+  <link rel="stylesheet" href="./remote_control.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <button id="lift_chest" type="button">Lift Chest</button>
+      <button id="lower_chest" type="button">Lower Chest</button>
+    </div>
+    <div class="row">
+      <button id="open_mouth" type="button">Open Mouth</button>
+      <button id="close_mouth" type="button">Close Mouth</button>
+    </div>
+    <div class="row">
+      <button id="lift_fin" type="button">Lift Fin</button>
+      <button id="lower_fin" type="button">Lower Fin</button>
+    </div>
+    <div class="row">
+      <button id="flap_fin" type="button">Flap Fin</button>
+      <button id="snap_mouth" type="button">Snap Mouth</button>
+    </div>
+  </div>
+  
+
+  <script src="./fish_api.js"></script>
+
+  <script>
+    const url = "http://128.7.76.147:3000"
+    
+    const attachHandlerToButton = (bttnId, handler) => {
+      const el = document.getElementById(bttnId);
+      el.onclick = handler;
+    }
+
+    attachHandlerToButton("lift_chest", Fish.liftChest);
+    attachHandlerToButton("lower_chest", Fish.lowerChest);
+    attachHandlerToButton("open_mouth", Fish.openMouth);
+    attachHandlerToButton("close_mouth", Fish.closeMouth);
+    attachHandlerToButton("flap_fin", Fish.flapFin);
+    attachHandlerToButton("lift_fin", Fish.liftFin);
+    attachHandlerToButton("snap_mouth", Fish.snapMouth);
+    attachHandlerToButton("lower_fin", Fish.lowerFin);
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+#blocklyArea {
+  height: 100vh;
+  width: 100vw;
+}
+
+#runBttn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  border-style: solid;
+  border-color: white white white #202020;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-width: 25px 0px 25px 50px;
+}
+
+#runBttn.running {
+  display: none;
+}
