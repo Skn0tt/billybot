@@ -8,7 +8,8 @@ const workspace = Blockly.inject(
     zoom: {
       controls: true,
       wheel: true,
-    }
+    },
+    media: "./google-blockly/media/"
   }
 );
 
