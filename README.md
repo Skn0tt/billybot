@@ -5,6 +5,7 @@ This is the repository of *BillyBot*, the programmable fish.
 ## Setup
 
 Clone this repository.
+Don't forget the submodule: `git submodule update --init`
 
 The files in `/www` should be served using a web server ([Setting up an Apache Web Server on a Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md)).
 
