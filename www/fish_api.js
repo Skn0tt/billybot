@@ -1,4 +1,4 @@
-const baseUrl = "http://128.7.76.147:3000"
+const baseUrl = `${location.protocol}//${location.hostname}:3000`
 
 const runCommand = (cmd) => async () => {
   await fetch(baseUrl, {

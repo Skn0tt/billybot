@@ -1,0 +1,10 @@
+[Unit]
+Description=BillyBot Server
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/billybot/server/server.py
+
+[Install]
+WantedBy=multi-user.target
